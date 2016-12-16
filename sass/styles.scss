@@ -1,0 +1,26 @@
+@import 'normalize';
+
+body {
+  font-family: monospace;
+  background: url(../img/background-01.png) repeat;
+  margin: 0;
+}
+
+[id=top-bar] {
+  background: white;
+}
+
+[id=screen] {
+  height: 100vh;
+}
+
+[id=system] {
+  width: 100px;
+  height: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -2,9 +2,9 @@
   "name": "gui",
   "version": "1.0.0",
   "description": "GUI interface for harrypujols.com",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "start": "webpack"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,13 @@
     "website"
   ],
   "author": "Harry Pujols",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/harrypujols/gui/issues"
   },
-  "homepage": "https://github.com/harrypujols/gui#readme"
+  "homepage": "https://github.com/harrypujols/gui#readme",
+   "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
 }
