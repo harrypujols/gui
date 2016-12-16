@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'pix Chicago';
+	src: url('../fonts/pixChicago/pixChicago.eot');
+	src: url('../fonts/pixChicago/pixChicago.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/pixChicago/pixChicago.woff') format('woff'),
+		url('../fonts/pixChicago/pixChicago.ttf') format('truetype'),
+		url('../fonts/pixChicago/pixChicago.svg#pixChicago') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$headfont: 'pix Chicago';

@@ -368,6 +368,13 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+@font-face {
+  font-family: 'pix Chicago';
+  src: url("../fonts/pixChicago/pixChicago.eot");
+  src: url("../fonts/pixChicago/pixChicago.eot?#iefix") format("embedded-opentype"), url("../fonts/pixChicago/pixChicago.woff") format("woff"), url("../fonts/pixChicago/pixChicago.ttf") format("truetype"), url("../fonts/pixChicago/pixChicago.svg#pixChicago") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 html {
   font-size: 16vw; }
 
@@ -391,9 +398,9 @@ svg {
 
 [id=question] {
   position: absolute;
-  font-family: sans-serif;
-  font-size: .5rem;
-  top: calc(50% - .18rem);
+  font-family: "pix Chicago";
+  font-size: .35rem;
+  top: calc(50% - .1rem);
   left: calc(50% - .15rem);
   cursor: default; }
 
