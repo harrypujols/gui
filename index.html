@@ -8,8 +8,10 @@
 <body id="desktop">
   <div id="top-bar"></div>
   <div id="screen" class="center">
-    <img id="system" src="img/disk.svg" alt="system?">
-    <div id="question" class="blink">?</div>
+    <div v-draggable>
+      <img id="system" src="img/disk.svg" alt="system?">
+      <div id="question" class="blink">?</div>
+    </div>
   </div>
   <script src="js/vue.js"></script>
   <script src="js/app.js"></script>
