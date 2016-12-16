@@ -3,10 +3,15 @@
 html {
   font-size: 16vw;
 }
+
 body {
   font-family: monospace;
   background: url(../img/background-01.png) repeat;
   margin: 0;
+}
+
+svg {
+  max-width: 100%;
 }
 
 [id=top-bar] {
@@ -28,6 +33,7 @@ body {
   font-size: .5rem;
   top: calc(50% - .18rem);
   left: calc(50% - .15rem);
+  cursor: default;
 }
 
 .center {

@@ -376,6 +376,9 @@ body {
   background: url(../img/background-01.png) repeat;
   margin: 0; }
 
+svg {
+  max-width: 100%; }
+
 [id=top-bar] {
   background: white; }
 
@@ -391,7 +394,8 @@ body {
   font-family: sans-serif;
   font-size: .5rem;
   top: calc(50% - .18rem);
-  left: calc(50% - .15rem); }
+  left: calc(50% - .15rem);
+  cursor: default; }
 
 .center {
   display: flex;
