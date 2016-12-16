@@ -1,5 +1,5 @@
 new Vue({
-  el: '#app',
+  el: '#desktop',
   data: {
     message: 'Hello World'
   }
