@@ -1,3 +1,6 @@
+html {
+  font-size: 16vw;
+}
 body {
   font-family: monospace;
   background: url(../img/background-01.png) repeat;
@@ -13,12 +16,35 @@ body {
 }
 
 [id=system] {
-  width: 100px;
+  width: 1rem;
   height: auto;
+}
+
+[id=question] {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .5rem;
+  top: calc(50% - .08rem);
+  left: calc(50% - .15rem);
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes blinking {
+  from {
+    color: black;
+  }
+
+  to {
+    color: transparent;
+  }
+}
+
+.blink {
+  animation: blinking 1.2s infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
