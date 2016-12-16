@@ -1,0 +1,24 @@
+{
+  "name": "gui",
+  "version": "1.0.0",
+  "description": "GUI interface for harrypujols.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrypujols/gui.git"
+  },
+  "keywords": [
+    "gui",
+    "harry",
+    "website"
+  ],
+  "author": "Harry Pujols",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrypujols/gui/issues"
+  },
+  "homepage": "https://github.com/harrypujols/gui#readme"
+}
