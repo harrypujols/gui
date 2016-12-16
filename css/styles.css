@@ -376,38 +376,51 @@ textarea {
   font-style: normal; }
 
 html {
-  font-size: 16vw; }
+  font-size: 1.6vw; }
 
 body {
   font-family: monospace;
+  font-size: 1rem;
   background: url(../img/background-01.png) repeat;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 svg {
   max-width: 100%; }
 
 [id=top-bar] {
-  background: white; }
+  background: white;
+  padding: 0.625rem 0;
+  font-family: "pix Chicago";
+  font-size: 1.125rem; }
 
 [id=screen] {
   height: 100vh; }
 
 [id=system] {
-  width: 1rem;
+  width: 12.5rem;
   height: auto; }
 
 [id=question] {
   position: absolute;
   font-family: "pix Chicago";
-  font-size: .35rem;
-  top: calc(50% - .1rem);
-  left: calc(50% - .15rem);
+  font-size: 4.5rem;
+  top: 50%;
+  left: 50%;
   cursor: default; }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .menu li {
+    margin: 0 0.625rem; }
 
 @keyframes blinking {
   from {

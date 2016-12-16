@@ -26,7 +26,6 @@ new Vue({
         this.el.onmousedown = function(e) {
           drag = true
           this.classList.add('dragging')
-          console.log('dragging...')
         },
 
         this.el.onmousemove = function(e) {
@@ -35,8 +34,6 @@ new Vue({
           if ( drag === true ) {
             var x = e.clientX - w
             var y = e.clientY - h
-            console.log (x)
-            console.log(y)
             var pos = 'position:absolute;left:' + x + 'px;top:' + y + 'px;'
             this.setAttribute('style', pos)
           }

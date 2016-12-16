@@ -1,14 +1,17 @@
+@import 'settings';
 @import 'normalize';
 @import 'fonts';
 
 html {
-  font-size: 16vw;
+  font-size: vw(16px);
 }
 
 body {
   font-family: monospace;
+  font-size: rem(16px);
   background: url(../img/background-01.png) repeat;
   margin: 0;
+  padding: 0;
 }
 
 svg {
@@ -17,6 +20,9 @@ svg {
 
 [id=top-bar] {
   background: white;
+  padding: rem(10px) 0;
+  font-family: $headfont;
+  font-size: rem(18px);
 }
 
 [id=screen] {
@@ -24,16 +30,16 @@ svg {
 }
 
 [id=system] {
-  width: 1rem;
+  width: rem(200px);
   height: auto;
 }
 
 [id=question] {
   position: absolute;
   font-family: $headfont;
-  font-size: .35rem;
-  top: calc(50% - .1rem);
-  left: calc(50% - .15rem);
+  font-size: rem(72px);
+  top: 50%;
+  left: 50%;
   cursor: default;
 }
 
@@ -41,6 +47,17 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0 rem(10px);
+  }
 }
 
 @keyframes blinking {
