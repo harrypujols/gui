@@ -406,7 +406,7 @@ svg {
   font-family: "pix Chicago";
   font-size: 4.5rem;
   top: 50%;
-  left: 50%;
+  left: calc(50% - 1.625rem);
   cursor: default; }
 
 .center {
@@ -421,6 +421,9 @@ svg {
   padding: 0; }
   .menu li {
     margin: 0 0.625rem; }
+
+.icon-element {
+  position: relative; }
 
 @keyframes blinking {
   from {

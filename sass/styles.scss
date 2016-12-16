@@ -39,7 +39,7 @@ svg {
   font-family: $headfont;
   font-size: rem(72px);
   top: 50%;
-  left: 50%;
+  left: calc(50% - #{rem(26px)});
   cursor: default;
 }
 
@@ -58,6 +58,10 @@ svg {
   li {
     margin: 0 rem(10px);
   }
+}
+
+.icon-element {
+  position: relative;
 }
 
 @keyframes blinking {
