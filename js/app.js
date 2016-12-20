@@ -12,8 +12,7 @@ new Vue({
       var request = new XMLHttpRequest()
       request.open('GET', url, true)
       request.onreadystatechange = function() {
-        if (this.readyState !== 4) return
-        if (this.status !== 200) return
+        if ( this.readyState !== 4 || this.status !== 200 ) return
         that.el.innerHTML = this.responseText
       }
       request.send();
@@ -22,12 +21,10 @@ new Vue({
     draggable: {
       bind: function() {
         var drag = this.drag
-
         this.el.onmousedown = function(e) {
           drag = true
           this.classList.add('dragging')
         },
-
         this.el.onmousemove = function(e) {
           var w = this.offsetWidth / 2
           var h = this.offsetHeight / 2
@@ -38,7 +35,6 @@ new Vue({
             this.setAttribute('style', pos)
           }
         },
-
         this.el.onmouseup = function() {
           drag = false;
           this.classList.remove('dragging')

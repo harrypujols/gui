@@ -381,18 +381,28 @@ html {
 body {
   font-family: monospace;
   font-size: 1rem;
-  background: url(../img/background-01.png) repeat;
   margin: 0;
   padding: 0; }
 
 svg {
   max-width: 100%; }
 
+.bg1 {
+  background: url(../img/background-01.png) repeat; }
+
+.bg2 {
+  background: url(../img/background-02.png) repeat; }
+
+.bg3 {
+  background: url(../img/background-03.png) repeat; }
+
 [id=top-bar] {
   background: white;
   padding: 0.625rem 0;
   font-family: "pix Chicago";
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  z-index: 100;
+  border-bottom: thin solid black; }
 
 [id=screen] {
   height: 100vh; }
