@@ -1,7 +1,3 @@
-Vue.component('window', {
-  template: '#window'
-})
-
 Vue.directive('draggable', {
   bind: function(el) {
     var drag = this.drag
@@ -27,7 +23,11 @@ Vue.directive('draggable', {
       this.classList.remove('dragging')
     }
   }
-})
+});
+
+Vue.component('window', {
+  template: '#window'
+});
 
 new Vue({
   el: '#desktop',
@@ -36,13 +36,7 @@ new Vue({
     drag: true
   },
 
-  // directives: {
-  //   draggable: {
-  //
-  //   }
-  // },
-
   methods: {
 
   }
-})
+});
