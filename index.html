@@ -5,7 +5,8 @@
   <title>Desktop</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body id="desktop" class="bg1">
+<body class="bg1">
+<div id="desktop">
   <div id="top-bar">
     <ul class="menu">
       <li>About</li>
@@ -14,11 +15,20 @@
   </div>
   <div id="screen" class="center">
     <div v-draggable class="icon-element">
-      <div id="system" v-include="img/disk.svg" alt="system?"></div>
+      <img id="system" src="img/disk.svg" alt="system?">
       <div id="question" class="blink">?</div>
     </div>
+    <window></window>
   </div>
-  <script src="js/vue.js"></script>
-  <script src="js/app.js"></script>
+</div>
+  <!-- template for the modal component -->
+<script type="text/x-template" id="window">
+  <div v-draggable class="outer-window">
+      <h1>Zup</h1>
+  </div>
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -375,6 +375,11 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
+.outer-window {
+  width: 30vw;
+  background-color: white;
+  border: thin solid black; }
+
 html {
   font-size: 1.6vw; }
 
