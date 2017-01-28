@@ -25,9 +25,10 @@ Vue.directive('draggable', {
   }
 });
 
-Vue.component('window', {
-  template: '#window'
-});
+// Vue.component('window', {
+//   template: '#window',
+//   props: ['draggable']
+// });
 
 new Vue({
   el: '#desktop',
@@ -36,7 +37,16 @@ new Vue({
     drag: true
   },
 
-  methods: {
+  components: {
+    'window': {
+      template: '#window',
+      // props: ['draggable']
+    }
+  },
 
-  }
+  // methods: {
+  //   draggable: {
+  //
+  //   }
+  // }
 });
