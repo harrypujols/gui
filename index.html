@@ -18,12 +18,14 @@
       <img id="system" src="img/disk.svg" alt="system?">
       <div id="question" class="blink">?</div>
     </div>
-    <window></window>
+    <div v-draggable>
+      <window></window>
+    </div>
   </div>
 </div>
   <!-- template for the modal component -->
 <script type="text/x-template" id="window">
-  <div v-draggable class="outer-window">
+  <div class="outer-window">
       <h1>Zup</h1>
   </div>
 </script>
