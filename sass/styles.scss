@@ -92,3 +92,7 @@ svg {
   animation: blinking 1.2s infinite;
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
+
+.dragging,  .dragging * {
+  cursor: move;
+}
