@@ -381,11 +381,11 @@ textarea {
   border: thin solid black; }
 
 html {
-  font-size: 1.6vw; }
+  font-size: 16px; }
 
 body {
   font-family: monospace;
-  font-size: 1rem;
+  font-size: 0.875rem;
   margin: 0;
   padding: 0; }
 
@@ -405,7 +405,7 @@ svg {
   background: white;
   padding: 0.625rem 0;
   font-family: "pix Chicago";
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   z-index: 100;
   border-bottom: thin solid black; }
 
