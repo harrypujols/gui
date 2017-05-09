@@ -38,6 +38,20 @@ new Vue({
           this.classList.remove('dragging')
         }
       }
+    },
+
+    include: {
+      bind: function (el, binding) {
+        var url = 'img/' + binding.expression + '.svg'
+        var request = new XMLHttpRequest()
+        request.open('GET', url, true)
+        request.onreadystatechange = function() {
+          if (this.readyState !== 4) return
+          if (this.status !== 200) return
+          el.innerHTML = this.responseText
+        }
+        request.send();
+     }
     }
   }
 });
