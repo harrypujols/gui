@@ -1,15 +1,15 @@
 @import 'settings';
 @import 'normalize';
 @import 'fonts';
+@import 'window';
 
 html {
-  font-size: vw(16px);
+  font-size: 16px;
 }
 
 body {
   font-family: monospace;
-  font-size: rem(16px);
-  background: url(../img/background-01.png) repeat;
+  font-size: rem(14px);
   margin: 0;
   padding: 0;
 }
@@ -18,11 +18,25 @@ svg {
   max-width: 100%;
 }
 
+.bg1 {
+  background: url(../img/background-01.png) repeat;
+}
+
+.bg2 {
+  background: url(../img/background-02.png) repeat;
+}
+
+.bg3 {
+  background: url(../img/background-03.png) repeat;
+}
+
 [id=top-bar] {
   background: white;
   padding: rem(10px) 0;
   font-family: $headfont;
-  font-size: rem(18px);
+  font-size: rem(14px);
+  z-index: 100;
+  border-bottom: thin solid black;
 }
 
 [id=screen] {
@@ -77,4 +91,8 @@ svg {
 .blink {
   animation: blinking 1.2s infinite;
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.dragging,  .dragging * {
+  cursor: move;
 }
