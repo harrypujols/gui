@@ -15,10 +15,9 @@
   </div>
   <div id="screen" class="center">
     <div v-draggable class="icon-element">
-      <img id="system" src="img/disk.svg" alt="system?">
+      <div id="system" v-include="'img/disk.svg'"></div>
       <div id="question" class="blink">?</div>
     </div>
-    <div v-include="'img/bomb.svg'"></div>
     <div v-draggable>
       <window></window>
     </div>
