@@ -42,7 +42,7 @@ new Vue({
 
     include: {
       bind: function (el, binding) {
-        var url = 'img/' + binding.expression + '.svg'
+        var url = binding.value
         var request = new XMLHttpRequest()
         request.open('GET', url, true)
         request.onreadystatechange = function() {
