@@ -18,7 +18,7 @@ export default Vue.directive('draggable', {
       }
     },
 
-    el.onmouseup = function() {
+    el.onmouseleave = function() {
       drag = false;
       el.classList.remove('dragging')
     }

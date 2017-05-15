@@ -1,5 +1,30 @@
 .outer-window {
-  width: vw(300px);
+  width: 500px;
   background-color: white;
-  border: thin solid black;
+  border: 2px solid black;
+}
+
+.window-header {
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.stripes {
+  background: repeating-linear-gradient(0deg,
+    black, black 2px,
+    white 0, white 6px
+  );
+}
+
+.window-title {
+  margin: 0;
+  padding: 0 10px;
+  display: inline-block;
+  background-color: white;
+}
+
+.window-body {
+  min-height: 260px;
+  padding: 5px;
 }
