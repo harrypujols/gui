@@ -15,19 +15,30 @@
   </div>
   <div id="screen" class="center">
     <div v-draggable class="icon-element">
-      <img id="system" src="img/disk.svg" alt="system?">
+      <div id="system" v-include="'img/disk.svg'"></div>
       <div id="question" class="blink">?</div>
     </div>
-    <div v-include="'img/bomb.svg'"></div>
-    <div v-draggable>
-      <window></window>
-    </div>
+    <window></window>
   </div>
 </div>
   <!-- template for the modal component -->
 <script type="text/x-template" id="window">
-  <div class="outer-window">
-      <h1>Zup</h1>
+  <div v-draggable class="outer-window">
+    <div class="window-header">
+      <div class="inner-window stripes">
+        <h2 class="window-title">
+          Zup
+        </h2>
+        <div class="window-close">
+          <a href="#" class="close-button"></a>
+        </div>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="window-grid">
+        <div class="grid-item"></div>
+      </div>
+    </div>
   </div>
 </script>
 
