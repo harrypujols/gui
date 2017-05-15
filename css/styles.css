@@ -389,6 +389,7 @@ textarea {
   background: repeating-linear-gradient(0deg, black, black 2px, white 0, white 6px); }
 
 .window-title {
+  font-size: 1.625rem;
   margin: 0;
   padding: 0 10px;
   display: inline-block;
@@ -402,8 +403,8 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: monospace;
-  font-size: 0.875rem;
+  font-family: "VT323", monospace;
+  font-size: 1.375rem;
   margin: 0;
   padding: 0; }
 
@@ -422,8 +423,6 @@ svg {
 [id=top-bar] {
   background: white;
   padding: 0.625rem 0;
-  font-family: "pix Chicago";
-  font-size: 0.875rem;
   z-index: 100;
   border-bottom: thin solid black; }
 
@@ -436,7 +435,6 @@ svg {
 
 [id=question] {
   position: absolute;
-  font-family: "pix Chicago";
   font-size: 4.5rem;
   top: 50%;
   left: calc(50% - 1.625rem);
