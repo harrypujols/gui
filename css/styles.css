@@ -429,17 +429,6 @@ svg {
 [id=screen] {
   height: 100vh; }
 
-[id=system] {
-  width: 12.5rem;
-  height: auto; }
-
-[id=question] {
-  position: absolute;
-  font-size: 4.5rem;
-  top: 50%;
-  left: calc(50% - 1.625rem);
-  cursor: default; }
-
 .center {
   display: flex;
   justify-content: center;
@@ -454,7 +443,12 @@ svg {
     margin: 0 0.625rem; }
 
 .icon-element {
-  position: relative; }
+  width: 72px; }
+  .icon-element p {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    white-space: nowrap; }
 
 @keyframes blinking {
   from {

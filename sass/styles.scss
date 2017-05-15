@@ -41,19 +41,6 @@ svg {
   height: 100vh;
 }
 
-[id=system] {
-  width: rem(200px);
-  height: auto;
-}
-
-[id=question] {
-  position: absolute;
-  font-size: rem(72px);
-  top: 50%;
-  left: calc(50% - #{rem(26px)});
-  cursor: default;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -72,7 +59,14 @@ svg {
 }
 
 .icon-element {
-  position: relative;
+  width: 72px;
+
+  p {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
 
 @keyframes blinking {
