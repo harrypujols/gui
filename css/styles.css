@@ -422,7 +422,9 @@ svg {
   max-width: 100%; }
 
 .bg1 {
-  background: url(../img/background-01.png) repeat; }
+  background-image: linear-gradient(45deg, black 50%, transparent 50%), linear-gradient(-45deg, black 50%, transparent 50%), linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(-45deg, transparent 50%, black 50%);
+  background-size: 2px 2px;
+  background-position: 0 0, 1px 0, 1px -1px, 0px 1px; }
 
 .bg2 {
   background: url(../img/background-02.png) repeat; }
