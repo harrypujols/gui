@@ -29,3 +29,15 @@
   min-height: 260px;
   padding: 5px;
 }
+
+.window-close {
+  float: right;
+}
+
+.close-button {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 1px solid black;
+}
