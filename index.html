@@ -16,10 +16,10 @@
   </div>
   <div id="screen">
     <div v-draggable class="icon-element">
-      <div v-include="'img/disk.svg'"></div>
+      <div class="icon" v-include="'img/disk.svg'"></div>
       <p>Disk</p>
     </div>
-    <window></window>
+    <window :text="message"></window>
   </div>
 </div>
   <!-- template for the modal component -->
@@ -27,7 +27,7 @@
   <div v-draggable class="outer-window">
     <div class="window-header">
       <div class="inner-window stripes">
-        <h2 class="window-title">Window</h2>
+        <h2 class="window-title">{{ text }}</h2>
         <div class="window-close">
           <button class="close-button"></button>
         </div>

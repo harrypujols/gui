@@ -455,9 +455,11 @@ svg {
     margin: 0 0.625rem; }
 
 .icon-element {
-  width: 72px; }
+  width: 72px;
+  line-height: 1.25rem; }
   .icon-element p {
     margin: 0;
+    line-height: 1.125rem;
     background-color: white;
     text-align: center;
     white-space: nowrap; }

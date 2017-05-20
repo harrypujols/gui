@@ -66,9 +66,11 @@ svg {
 
 .icon-element {
   width: 72px;
+  line-height: rem(20px);
 
   p {
     margin: 0;
+    line-height: rem(18px);
     background-color: white;
     text-align: center;
     white-space: nowrap;

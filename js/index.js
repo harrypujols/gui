@@ -5,13 +5,14 @@ new Vue({
   el: '#desktop',
 
   data: {
-    message: 'Hello World',
+    message: 'window',
     drag: true
   },
 
   components: {
     'window': {
-      template: '#window'
+      template: '#window',
+      props: ['text']
     }
   }
 });
