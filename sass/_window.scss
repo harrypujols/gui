@@ -1,7 +1,15 @@
 .outer-window {
+  position: absolute;
+  top: calc(50% - 130px);
+  left: 15px;
   width: 500px;
+  max-width: calc(100% - 30px);
   background-color: white;
   border: 2px solid black;
+
+  @include breakpoint(desktop) {
+    left: calc(50% - 250px);
+  }
 }
 
 .window-header {

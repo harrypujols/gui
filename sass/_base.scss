@@ -1,0 +1,14 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: rem(22px);
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  max-width: 100%;
+}

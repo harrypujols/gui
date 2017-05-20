@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg1">
-<div id="desktop">
-  <div id="top-bar">
+<main id="desktop">
+  <nav id="top-bar">
     <ul class="menu">
       <li>About</li>
       <li>Share</li>
     </ul>
-  </div>
-  <div id="screen">
-    <div v-draggable class="icon-element">
-      <div class="icon" v-include="'img/disk.svg'"></div>
-      <p>Disk</p>
-    </div>
+  </nav>
+  <section id="screen">
     <window :text="message"></window>
-  </div>
-</div>
+    <div class="icons">
+      <div v-draggable class="icon-element">
+        <div class="icon" v-include="'img/disk.svg'"></div>
+        <p>Disk</p>
+      </div>
+    </div>
+  </section>
+</main>
   <!-- template for the modal component -->
 <script type="text/x-template" id="window">
   <div v-draggable class="outer-window">

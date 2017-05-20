@@ -7,5 +7,3 @@
   $vw-context: (1000*.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }
-
-$primary-font: 'VT323', monospace;

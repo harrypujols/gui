@@ -375,10 +375,91 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
+@keyframes blinking {
+  from {
+    color: black; }
+  to {
+    color: transparent; } }
+
+.blink {
+  animation: blinking 1.2s infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+
+.dragging, .dragging * {
+  cursor: move; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "VT323", monospace;
+  font-size: 1.375rem;
+  margin: 0;
+  padding: 0; }
+
+svg {
+  max-width: 100%; }
+
+.bg1 {
+  background-image: linear-gradient(45deg, black 50%, transparent 50%), linear-gradient(-45deg, black 50%, transparent 50%), linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(-45deg, transparent 50%, black 50%);
+  background-size: 2px 2px;
+  background-position: 0 0, 1px 0, 1px -1px, 0px 1px; }
+
+[id=screen] {
+  height: 100vh; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+[id=top-bar] {
+  background: white;
+  padding: 0.625rem 0;
+  z-index: 100;
+  border-bottom: thin solid black; }
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .menu li {
+    margin: 0 0.625rem; }
+
+.icons {
+  float: right;
+  padding: 1.25rem; }
+
+.icon-element {
+  width: 72px;
+  line-height: 1.25rem; }
+  .icon-element p {
+    margin: 0;
+    line-height: 1.125rem;
+    background-color: white;
+    text-align: center;
+    white-space: nowrap; }
+
 .outer-window {
+  position: absolute;
+  top: calc(50% - 130px);
+  left: 15px;
   width: 500px;
+  max-width: calc(100% - 30px);
   background-color: white;
   border: 2px solid black; }
+  @media (min-width: 769px) {
+    .outer-window {
+      left: calc(50% - 250px); } }
 
 .window-header {
   text-align: center;
@@ -408,71 +489,3 @@ textarea {
   height: 15px;
   background-color: white;
   border: 1px solid black; }
-
-html {
-  font-size: 16px; }
-
-body {
-  font-family: "VT323", monospace;
-  font-size: 1.375rem;
-  margin: 0;
-  padding: 0; }
-
-svg {
-  max-width: 100%; }
-
-.bg1 {
-  background-image: linear-gradient(45deg, black 50%, transparent 50%), linear-gradient(-45deg, black 50%, transparent 50%), linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(-45deg, transparent 50%, black 50%);
-  background-size: 2px 2px;
-  background-position: 0 0, 1px 0, 1px -1px, 0px 1px; }
-
-.bg2 {
-  background: url(../img/background-02.png) repeat; }
-
-.bg3 {
-  background: url(../img/background-03.png) repeat; }
-
-[id=top-bar] {
-  background: white;
-  padding: 0.625rem 0;
-  z-index: 100;
-  border-bottom: thin solid black; }
-
-[id=screen] {
-  height: 100vh; }
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .menu li {
-    margin: 0 0.625rem; }
-
-.icon-element {
-  width: 72px;
-  line-height: 1.25rem; }
-  .icon-element p {
-    margin: 0;
-    line-height: 1.125rem;
-    background-color: white;
-    text-align: center;
-    white-space: nowrap; }
-
-@keyframes blinking {
-  from {
-    color: black; }
-  to {
-    color: transparent; } }
-
-.blink {
-  animation: blinking 1.2s infinite;
-  animation-timing-function: cubic-bezier(1, 0, 0, 1); }
-
-.dragging, .dragging * {
-  cursor: move; }
