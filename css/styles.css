@@ -394,11 +394,19 @@ html {
 body {
   font-family: "VT323", monospace;
   font-size: 1.375rem;
+  color: black;
+  background-color: white;
   margin: 0;
   padding: 0; }
 
 svg {
   max-width: 100%; }
+
+polygon {
+  fill: white; }
+
+path {
+  fill: black; }
 
 .bg1 {
   background-image: linear-gradient(45deg, black 50%, transparent 50%), linear-gradient(-45deg, black 50%, transparent 50%), linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(-45deg, transparent 50%, black 50%);
@@ -422,10 +430,9 @@ svg {
     clear: both; }
 
 [id=top-bar] {
-  background: white;
-  padding: 0.625rem 0;
+  background-color: white;
   z-index: 100;
-  border-bottom: thin solid black; }
+  border-bottom: 2px solid black; }
 
 .menu {
   display: flex;

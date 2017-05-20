@@ -1,8 +1,7 @@
 [id=top-bar] {
-  background: white;
-  padding: rem(10px) 0;
+  background-color: $background-color;
   z-index: 100;
-  border-bottom: thin solid black;
+  border-bottom: 2px solid $fill-color;
 }
 
 .menu {
