@@ -12,7 +12,12 @@ new Vue({
   components: {
     'window': {
       template: '#window',
-      props: ['text']
+      props: ['text'],
+      data: function() {
+        return {
+          items: [1, 2, 3, 4]
+        }
+      }
     }
   }
 });

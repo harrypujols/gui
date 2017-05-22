@@ -400,7 +400,8 @@ body {
   padding: 0; }
 
 svg {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 polygon {
   fill: white; }
@@ -414,7 +415,7 @@ path {
   background-position: 0 0, 1px 0, 1px -1px, 0px 1px; }
 
 [id=screen] {
-  height: 100vh; }
+  height: calc(100vh - 25px); }
 
 .center {
   display: flex;
@@ -496,3 +497,11 @@ path {
   height: 15px;
   background-color: white;
   border: 1px solid black; }
+
+.window-grid {
+  padding: 0.625rem;
+  display: flex;
+  flex-wrap: wrap; }
+
+.grid-item {
+  margin: 0.625rem; }
