@@ -449,6 +449,7 @@ path {
 
 .icon-element {
   width: 72px;
+  max-width: 100%;
   line-height: 1.25rem; }
   .icon-element p {
     margin: 0;
@@ -457,7 +458,7 @@ path {
     text-align: center;
     white-space: nowrap; }
 
-.outer-window {
+.window {
   position: absolute;
   top: calc(50% - 130px);
   left: 15px;
@@ -466,8 +467,10 @@ path {
   background-color: white;
   border: 2px solid black; }
   @media (min-width: 769px) {
-    .outer-window {
+    .window {
       left: calc(50% - 250px); } }
+  .window .icon-element {
+    width: 42px; }
 
 .window-header {
   text-align: center;

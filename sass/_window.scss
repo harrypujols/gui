@@ -1,4 +1,4 @@
-.outer-window {
+.window {
   position: absolute;
   top: calc(50% - 130px);
   left: 15px;
@@ -9,6 +9,10 @@
 
   @include breakpoint(desktop) {
     left: calc(50% - 250px);
+  }
+
+  .icon-element {
+    width: 42px;
   }
 }
 
