@@ -16,12 +16,7 @@ new Vue({
   components: {
     'window': {
       template: '#window',
-      props: ['post'],
-      data: function() {
-        return {
-          items: [1, 2, 3, 4]
-        }
-      }
+      props: ['post']
     }
   },
 

@@ -37,10 +37,10 @@
     </div>
     <div class="window-body">
       <div class="window-grid">
-        <div class="grid-item" v-for="item in items">
+        <div class="grid-item" v-for="item in post.items">
           <div class="icon-element">
-            <div class="icon" v-include="'img/document.svg'"></div>
-            <p>Document</p>
+            <div class="icon" v-include="'img/' + item.icon + '.svg'"></div>
+            <p>{{ item.name }}</p>
           </div>
         </div>
       </div>
