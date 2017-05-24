@@ -450,7 +450,11 @@ path {
 .icon-element {
   max-width: 100%;
   text-align: center;
-  line-height: 1.25rem; }
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end; }
   .icon-element svg {
     width: 72px; }
   .icon-element p {

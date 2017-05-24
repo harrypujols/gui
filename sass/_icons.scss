@@ -7,6 +7,10 @@
   max-width: 100%;
   text-align: center;
   line-height: rem(20px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
 
   svg {
     width: 72px;
