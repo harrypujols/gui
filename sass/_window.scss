@@ -11,6 +11,13 @@
     left: calc(50% - 250px);
   }
 
+  .icon-element {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
   svg {
     width: 42px;
   }

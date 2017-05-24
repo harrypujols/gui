@@ -450,11 +450,7 @@ path {
 .icon-element {
   max-width: 100%;
   text-align: center;
-  line-height: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: flex-end; }
+  line-height: 1.25rem; }
   .icon-element svg {
     width: 72px; }
   .icon-element p {
@@ -475,6 +471,11 @@ path {
   @media (min-width: 769px) {
     .window {
       left: calc(50% - 250px); } }
+  .window .icon-element {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end; }
   .window svg {
     width: 42px; }
 
