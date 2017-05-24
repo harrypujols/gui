@@ -15,11 +15,11 @@
     </ul>
   </nav>
   <section id="screen">
-    <window :text="message"></window>
+    <window :post="content"></window>
     <div class="icons">
       <div v-draggable class="icon-element">
         <div class="icon" v-include="'img/disk.svg'"></div>
-        <p>Disk</p>
+        <p>disk</p>
       </div>
     </div>
   </section>
@@ -29,7 +29,7 @@
   <div v-draggable class="window">
     <div class="window-header">
       <div class="inner-window stripes">
-        <h2 class="window-title">{{ text }}</h2>
+        <h2 class="window-title">{{ post.message }}</h2>
         <div class="window-close">
           <button class="close-button"></button>
         </div>
@@ -49,6 +49,7 @@
 </script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
