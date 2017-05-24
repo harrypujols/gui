@@ -2,10 +2,10 @@
   "message": "Window",
   "items": [{
     "icon": "document",
-    "name": "Document 1"
+    "name": "Document"
   }, {
-    "icon": "document",
-    "name": "Document 2"
+    "icon": "app",
+    "name": "App"
   }, {
     "icon": "folder",
     "name": "Folder"
