@@ -4,9 +4,13 @@
 }
 
 .icon-element {
-  width: 72px;
   max-width: 100%;
+  text-align: center;
   line-height: rem(20px);
+
+  svg {
+    width: 72px;
+  }
 
   p {
     margin: 0;

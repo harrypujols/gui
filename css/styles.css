@@ -448,9 +448,11 @@ path {
   padding: 1.25rem; }
 
 .icon-element {
-  width: 72px;
   max-width: 100%;
+  text-align: center;
   line-height: 1.25rem; }
+  .icon-element svg {
+    width: 72px; }
   .icon-element p {
     margin: 0;
     line-height: 1.125rem;
@@ -469,7 +471,7 @@ path {
   @media (min-width: 769px) {
     .window {
       left: calc(50% - 250px); } }
-  .window .icon-element {
+  .window svg {
     width: 42px; }
 
 .window-header {
