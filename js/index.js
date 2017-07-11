@@ -33,6 +33,11 @@ new Vue({
       .catch(function(error){
         console.log(error)
       })
+    },
+
+    breakpoint: function() {
+      var breakpoint = window.getComputedStyle(document.querySelector('body'), ':before').getPropertyValue('content').replace(/\"/g, '');
+      return breakpoint;
     }
   },
 
