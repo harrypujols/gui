@@ -398,6 +398,11 @@ body {
   background-color: white;
   margin: 0;
   padding: 0; }
+  body:before {
+    display: none; }
+    @media (min-width: 769px) {
+      body:before {
+        content: "desktop"; } }
 
 svg {
   max-width: 100%;
