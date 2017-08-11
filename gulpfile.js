@@ -6,37 +6,37 @@ var gulp =        require('gulp'),
     buffer =      require('vinyl-buffer'),
     browsersync = require('browser-sync').create();
 
-gulp.task('babel', function () {
-  var b = browserify({
-  entries: './js/index.js',
-  debug: true,
-	transform: [babelify.configure({
-		  presets: ['babel-preset-es2015']
-    })]
-  });
+    gulp.task('babel', function () {
+      var b = browserify({
+      entries: './src/js/app.js',
+      debug: true,
+    	transform: [babelify.configure({
+    		  presets: ['babel-preset-es2015']
+        })]
+      });
 
-  return b.bundle()
-    .pipe(source('app.js'))
-    .pipe(buffer())
-    .pipe(gulp.dest('./js/'))
-    .pipe(browsersync.stream());
-});
-
-gulp.task('serve', ['sass', 'babel'], function(){
-  browsersync.init({
-    server: './'
-  });
-
-  gulp.watch('./sass/*.scss', ['sass']);
-  gulp.watch(['./js/*.js', './js/**/*.js'], ['babel']);
-  gulp.watch('./*.html').on('change', browsersync.reload);
-});
-
-gulp.task('sass', function(){
-  return gulp.src('./sass/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./css'))
+      return b.bundle()
+        .pipe(source('scripts.js'))
+        .pipe(buffer())
+        .pipe(gulp.dest('./public/js/'))
         .pipe(browsersync.stream());
-});
+    });
 
-gulp.task('default', ['serve']);
+    gulp.task('serve', ['sass', 'babel'], function() {
+      browsersync.init({
+        server: './public'
+      });
+
+      gulp.watch(['./src/sass/*.scss', './src/sass/**/*.scss'], ['sass']);
+      gulp.watch(['./src/js/*.js', './src/js/**/*.js'], ['babel']);
+      gulp.watch('./*.html').on('change', browsersync.reload);
+    });
+
+    gulp.task('sass', function(){
+      return gulp.src('./src/sass/*.scss')
+            .pipe(sass())
+            .pipe(gulp.dest('./public/css'))
+            .pipe(browsersync.stream());
+    });
+
+    gulp.task('default', ['serve']);
