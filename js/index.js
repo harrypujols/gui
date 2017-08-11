@@ -1,44 +1,22 @@
 import draggable from './directives/draggable'
 import include from './directives/include'
+import data from './data'
+import components from './components'
+import update from './methods/update'
+import breakpoint from './methods/breakpoint'
 
 Vue.prototype.$http = axios
 
 new Vue({
   el: '#desktop',
 
-  data: {
-    datafile: '../data/data.json',
-    message: 'hello',
-    content: {},
-    drag: true
-  },
+  data: data,
 
-  components: {
-    'window': {
-      template: '#window',
-      props: ['post']
-    }
-  },
+  components: components,
 
   methods: {
-    update: function() {
-      var that = this
-      this.$http({
-        url: this.datafile,
-        method: 'GET'
-      })
-      .then(function(result) {
-        that.content = result.data
-      })
-      .catch(function(error){
-        console.log(error)
-      })
-    },
-
-    breakpoint: function() {
-      var breakpoint = window.getComputedStyle(document.querySelector('body'), ':before').getPropertyValue('content').replace(/\"/g, '');
-      return breakpoint;
-    }
+    update: update,
+    breakpoint: breakpoint
   },
 
   mounted: function() {
