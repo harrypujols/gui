@@ -1,3 +1,4 @@
+// include
 export default Vue.directive('include', {
   bind: function ( el, binding ) {
     fetch( binding.value )

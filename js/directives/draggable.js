@@ -1,3 +1,4 @@
+// draggable
 export default Vue.directive('draggable', {
   bind: function(el) {
     var drag = el.drag
