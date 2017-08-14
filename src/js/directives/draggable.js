@@ -1,8 +1,8 @@
 // draggable
 export default Vue.directive('draggable', {
-  bind: function(el) {
+  bind: function(el, binding) {
     interact(el, {
-      allowFrom: el.querySelector('.drag-point')
+      allowFrom: el.querySelector( binding.value )
     })
     .draggable({
 
