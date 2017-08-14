@@ -18,7 +18,7 @@
     <window :post="content"></window>
     <div class="icons">
       <div v-draggable class="icon-element">
-        <div class="icon" v-include="'img/disk.svg'"></div>
+        <div class="icon drag-point" v-include="'img/disk.svg'"></div>
         <p>disk</p>
       </div>
     </div>
@@ -27,7 +27,7 @@
   <!-- template for the modal component -->
 <script type="text/x-template" id="window">
   <div v-draggable class="window">
-    <div class="window-header">
+    <div class="window-header drag-point">
       <div class="inner-window stripes">
         <h2 class="window-title">{{ post.message }}</h2>
         <div class="window-close">
@@ -50,6 +50,7 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.9/interact.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
