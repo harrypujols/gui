@@ -7,7 +7,7 @@ export default Vue.directive('draggable', {
     .draggable({
 
       restrict: {
-        restriction: '#screen',
+        restriction: '#desktop',
         endOnly: true,
         elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
       },

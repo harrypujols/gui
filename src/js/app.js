@@ -8,7 +8,7 @@ import breakpoint from './methods/breakpoint'
 Vue.prototype.$http = axios
 
 new Vue({
-  el: '#desktop',
+  el: '#stage',
 
   data: data,
 
