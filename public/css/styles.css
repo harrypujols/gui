@@ -451,6 +451,8 @@ path {
 .icons {
   float: right;
   padding: 1.25rem; }
+  .icons .icon-element {
+    margin-bottom: 30px; }
 
 .icon-element {
   max-width: 100%;

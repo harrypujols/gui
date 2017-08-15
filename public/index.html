@@ -21,6 +21,10 @@
         <div class="icon" v-include="'img/disk.svg'"></div>
         <p>disk</p>
       </div>
+      <div v-draggable="'.icon'" class="icon-element" @click="open = true">
+        <div class="icon" v-include="'img/folder.svg'"></div>
+        <p>folder</p>
+      </div>
     </div>
   </section>
 </main>
