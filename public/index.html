@@ -8,9 +8,15 @@
 </head>
 <body class="bg1">
 <main id="stage">
-  <nav id="top-bar">
+  <nav id="top-bar" class="top-bar">
     <ul class="menu">
-      <li>About</li>
+      <li class="has-dropdown" @click="$emit('close')">
+        About
+        <ul class="dropdown">
+          <li>Dropdown Item 1</li>
+          <li>Dropdown Item 2</li>
+        </ul>
+      </li>
       <li>Share</li>
     </ul>
   </nav>

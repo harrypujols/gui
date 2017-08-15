@@ -435,7 +435,7 @@ path {
   .clearfix:after {
     clear: both; }
 
-[id=top-bar] {
+.top-bar {
   background-color: white;
   z-index: 100;
   border-bottom: 2px solid black; }
@@ -447,6 +447,22 @@ path {
   padding: 0; }
   .menu li {
     margin: 0 0.625rem; }
+
+.has-dropdown {
+  position: relative; }
+
+.dropdown {
+  padding: 0.625rem 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: -0.625rem;
+  background-color: white;
+  border: 2px solid black; }
+  .dropdown li {
+    padding: 0.3125rem 0.9375rem;
+    white-space: nowrap; }
 
 .icons {
   float: right;
@@ -470,8 +486,8 @@ path {
 .window {
   position: absolute;
   top: calc(50% - 130px);
-  left: 15px;
-  width: 500px;
+  left: 0.9375rem;
+  width: 31.25rem;
   max-width: calc(100% - 30px);
   background-color: white;
   border: 2px solid black; }

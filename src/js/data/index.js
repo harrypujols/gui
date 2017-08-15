@@ -4,5 +4,6 @@ export default {
   message: 'hello',
   content: {},
   drag: true,
-  open: false
+  open: false,
+  toggle: false
 }
