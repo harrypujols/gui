@@ -4,6 +4,7 @@ import data from './data'
 import components from './components'
 import update from './methods/update'
 import toggle from './methods/toggle'
+import clear from './methods/clear'
 
 Vue.prototype.$http = axios
 
@@ -16,7 +17,8 @@ new Vue({
 
   methods: {
     update: update,
-    toggle: toggle
+    toggle: toggle,
+    clear: clear
   },
 
   mounted: function() {

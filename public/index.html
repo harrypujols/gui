@@ -10,14 +10,14 @@
 <main id="stage">
   <nav id="top-bar" class="top-bar">
     <ul class="menu">
-      <li class="has-dropdown" @click="toggle">
+      <li class="has-dropdown" @click="toggle" @mouseleave="clear">
         About
         <ul class="dropdown">
           <li>Dropdown Item 1</li>
           <li>Dropdown Item 2</li>
         </ul>
       </li>
-      <li class="has-dropdown" @click="toggle">
+      <li class="has-dropdown" @click="toggle" @mouseleave="clear">
         Share
         <ul class="dropdown">
           <li>Dropdown Item 1</li>
