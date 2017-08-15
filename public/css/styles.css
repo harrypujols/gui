@@ -444,7 +444,8 @@ path {
     margin: 0 0.625rem; }
 
 .has-dropdown {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .dropdown {
   padding: 0.625rem 0;

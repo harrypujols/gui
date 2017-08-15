@@ -10,9 +10,9 @@
 <main id="stage">
   <nav id="top-bar" class="top-bar">
     <ul class="menu">
-      <li class="has-dropdown" @click="$emit('close')">
+      <li class="has-dropdown" @click="toggle = !toggle">
         About
-        <ul class="dropdown">
+        <ul v-if="toggle" class="dropdown">
           <li>Dropdown Item 1</li>
           <li>Dropdown Item 2</li>
         </ul>
