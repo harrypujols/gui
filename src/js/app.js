@@ -3,7 +3,6 @@ import include from './directives/include'
 import data from './data'
 import components from './components'
 import update from './methods/update'
-import breakpoint from './methods/breakpoint'
 
 Vue.prototype.$http = axios
 
@@ -15,8 +14,7 @@ new Vue({
   components: components,
 
   methods: {
-    update: update,
-    breakpoint: breakpoint
+    update: update
   },
 
   mounted: function() {
