@@ -15,9 +15,9 @@
     </ul>
   </nav>
   <section id="desktop" class="screen">
-    <window :post="content"></window>
+    <window v-if="open" @close="open = false" :post="content"></window>
     <div class="icons">
-      <div v-draggable="'.icon'" class="icon-element">
+      <div v-draggable="'.icon'" class="icon-element" @click="open = true">
         <div class="icon" v-include="'img/disk.svg'"></div>
         <p>disk</p>
       </div>
@@ -31,7 +31,7 @@
       <div class="inner-window stripes">
         <h2 class="window-title">{{ post.message }}</h2>
         <div class="window-close">
-          <button class="close-button"></button>
+          <button class="close-button" @click="$emit('close')"></button>
         </div>
       </div>
     </div>
