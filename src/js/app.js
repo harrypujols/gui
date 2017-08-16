@@ -20,7 +20,7 @@ new Vue({
     toggle: toggle,
     clear: clear
   },
-
+  
   mounted: function() {
     this.update()
   }
