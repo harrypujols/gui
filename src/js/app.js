@@ -3,12 +3,13 @@ import include from './directives/include'
 import data from './data'
 import components from './components'
 import update from './methods/update'
-import breakpoint from './methods/breakpoint'
+import toggle from './methods/toggle'
+import clear from './methods/clear'
 
 Vue.prototype.$http = axios
 
 new Vue({
-  el: '#desktop',
+  el: '#stage',
 
   data: data,
 
@@ -16,9 +17,10 @@ new Vue({
 
   methods: {
     update: update,
-    breakpoint: breakpoint
+    toggle: toggle,
+    clear: clear
   },
-
+  
   mounted: function() {
     this.update()
   }

@@ -7,31 +7,47 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg1">
-<main id="desktop">
-  <nav id="top-bar">
+<main id="stage">
+  <nav id="top-bar" class="top-bar">
     <ul class="menu">
-      <li>About</li>
-      <li>Share</li>
+      <li class="has-dropdown" @click="toggle" @mouseleave="clear">
+        About
+        <ul class="dropdown">
+          <li>Dropdown Item 1</li>
+          <li>Dropdown Item 2</li>
+        </ul>
+      </li>
+      <li class="has-dropdown" @click="toggle" @mouseleave="clear">
+        Share
+        <ul class="dropdown">
+          <li>Dropdown Item 1</li>
+          <li>Dropdown Item 2</li>
+        </ul>
+      </li>
     </ul>
   </nav>
-  <section id="screen" class="screen">
-    <window :post="content"></window>
+  <section id="desktop" class="screen">
+    <window v-if="open" @close="open = false" :post="content"></window>
     <div class="icons">
-      <div v-draggable class="icon-element">
+      <div v-draggable="'.icon'" class="icon-element" @click="open = true">
         <div class="icon" v-include="'img/disk.svg'"></div>
         <p>disk</p>
+      </div>
+      <div v-draggable="'.icon'" class="icon-element" @click="open = true">
+        <div class="icon" v-include="'img/folder.svg'"></div>
+        <p>folder</p>
       </div>
     </div>
   </section>
 </main>
   <!-- template for the modal component -->
 <script type="text/x-template" id="window">
-  <div v-draggable class="window">
+  <div v-draggable="'.window-header'" class="window">
     <div class="window-header">
       <div class="inner-window stripes">
         <h2 class="window-title">{{ post.message }}</h2>
         <div class="window-close">
-          <button class="close-button"></button>
+          <button class="close-button" @click="$emit('close')"></button>
         </div>
       </div>
     </div>
@@ -50,6 +66,7 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.9/interact.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

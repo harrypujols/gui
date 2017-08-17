@@ -29,7 +29,7 @@ var gulp =        require('gulp'),
 
       gulp.watch(['./src/sass/*.scss', './src/sass/**/*.scss'], ['sass']);
       gulp.watch(['./src/js/*.js', './src/js/**/*.js'], ['babel']);
-      gulp.watch('./*.html').on('change', browsersync.reload);
+      gulp.watch('./public/index.html').on('change', browsersync.reload);
     });
 
     gulp.task('sass', function(){
