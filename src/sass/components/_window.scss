@@ -62,11 +62,11 @@
 }
 
 .window-grid {
-  padding: rem(10px);
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
 }
 
 .grid-item {
-  margin: rem(10px);
+
 }
