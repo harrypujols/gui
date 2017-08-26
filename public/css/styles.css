@@ -532,9 +532,6 @@ path {
   border: 1px solid black; }
 
 .window-grid {
-  padding: 0.625rem;
-  display: flex;
-  flex-wrap: wrap; }
-
-.grid-item {
-  margin: 0.625rem; }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem; }
