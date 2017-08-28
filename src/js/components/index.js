@@ -1,7 +1,12 @@
+import svg from '../methods/svg'
+
 // components
 export default {
   'window': {
     template: '#window',
-    props: ['post']
+    props: ['post'],
+    methods: {
+      svg: svg
+    }
   }
 }

@@ -102,6 +102,10 @@ var _clear = __webpack_require__(12);
 
 var _clear2 = _interopRequireDefault(_clear);
 
+var _svg = __webpack_require__(14);
+
+var _svg2 = _interopRequireDefault(_svg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 Vue.prototype.$http = axios;
@@ -116,7 +120,8 @@ new Vue({
   methods: {
     update: _update2.default,
     toggle: _toggle2.default,
-    clear: _clear2.default
+    clear: _clear2.default,
+    svg: _svg2.default
   },
 
   mounted: function mounted() {
@@ -797,11 +802,21 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _svg = __webpack_require__(14);
+
+var _svg2 = _interopRequireDefault(_svg);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 // components
 exports.default = {
   'window': {
     template: '#window',
-    props: ['post']
+    props: ['post'],
+    methods: {
+      svg: _svg2.default
+    }
   }
 };
 
@@ -856,6 +871,22 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (event) {
   event.target.classList.remove('is-active');
+};
+
+/***/ }),
+/* 13 */,
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (file) {
+  return "static/svg/" + file + ".svg";
 };
 
 /***/ })
