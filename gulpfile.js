@@ -71,7 +71,7 @@ var gulp        = require('gulp'),
       gulp.watch(['./src/index.html', './src/static/**/*', './src/data/*'], ['build']);
       gulp.watch(['./src/sass/*.scss', './src/sass/**/*.scss'], ['webpack']);
       gulp.watch(['./src/js/*.js', './src/js/**/*.js'], ['webpack']);
-      gulp.watch('./public/index.html').on('change', browsersync.reload);
+      gulp.watch('./src/index.html').on('change', browsersync.reload);
     });
 
     gulp.task('default', ['serve']);
