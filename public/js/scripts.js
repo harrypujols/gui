@@ -107,13 +107,9 @@ var _data = __webpack_require__(13);
 
 var _data2 = _interopRequireDefault(_data);
 
-var _components = __webpack_require__(14);
+var _components = __webpack_require__(15);
 
 var _components2 = _interopRequireDefault(_components);
-
-var _update = __webpack_require__(15);
-
-var _update2 = _interopRequireDefault(_update);
 
 var _toggle = __webpack_require__(16);
 
@@ -129,7 +125,7 @@ var _svg2 = _interopRequireDefault(_svg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-Vue.prototype.$http = axios;
+// Vue.prototype.$http = axios
 
 new Vue({
   el: '#stage',
@@ -139,16 +135,17 @@ new Vue({
   components: _components2.default,
 
   methods: {
-    update: _update2.default,
+    // update: update,
     toggle: _toggle2.default,
     clear: _clear2.default,
     svg: _svg2.default
   },
 
   mounted: function mounted() {
-    this.update();
+    // this.update()
   }
 });
+// import update from './js/methods/update'
 
 /***/ }),
 /* 3 */
@@ -822,17 +819,29 @@ exports.default = Vue.directive('include', {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-// data
+
+var _data = __webpack_require__(14);
+
+var _data2 = _interopRequireDefault(_data);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 exports.default = {
-  datafile: '../data/data.json',
+  // datafile: '../data/data.json',
   message: 'hello',
-  content: {},
+  content: _data2.default,
   drag: true,
   open: false
-};
+}; // data
 
 /***/ }),
 /* 14 */
+/***/ (function(module, exports) {
+
+module.exports = {"message":"Window","items":[{"icon":"document","name":"Document"},{"icon":"app","name":"App"},{"icon":"folder","name":"Folder"},{"icon":"document","name":"File"}]}
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -857,29 +866,6 @@ exports.default = {
       svg: _svg2.default
     }
   }
-};
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function () {
-  var that = this;
-  this.$http({
-    url: this.datafile,
-    method: 'GET'
-  }).then(function (result) {
-    that.content = result.data;
-  }).catch(function (error) {
-    console.log(error);
-  });
 };
 
 /***/ }),
