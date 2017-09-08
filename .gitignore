@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# webpack generated fonts
+public/js/*.eot
+public/js/*.woff
+public/js/*.ttf
+public/js/*.svg
