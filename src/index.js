@@ -3,12 +3,12 @@ import draggable from './js/directives/draggable'
 import include from './js/directives/include'
 import data from './js/data'
 import components from './js/components'
-import update from './js/methods/update'
+// import update from './js/methods/update'
 import toggle from './js/methods/toggle'
 import clear from './js/methods/clear'
 import svg from './js/methods/svg'
 
-Vue.prototype.$http = axios
+// Vue.prototype.$http = axios
 
 new Vue({
   el: '#stage',
@@ -18,13 +18,13 @@ new Vue({
   components: components,
 
   methods: {
-    update: update,
+    // update: update,
     toggle: toggle,
     clear: clear,
     svg: svg
   },
 
   mounted: function() {
-    this.update()
+    // this.update()
   }
 });
