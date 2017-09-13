@@ -125,8 +125,6 @@ var _svg2 = _interopRequireDefault(_svg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Vue.prototype.$http = axios
-
 new Vue({
   el: '#stage',
 
@@ -135,17 +133,13 @@ new Vue({
   components: _components2.default,
 
   methods: {
-    // update: update,
     toggle: _toggle2.default,
     clear: _clear2.default,
     svg: _svg2.default
   },
 
-  mounted: function mounted() {
-    // this.update()
-  }
+  mounted: function mounted() {}
 });
-// import update from './js/methods/update'
 
 /***/ }),
 /* 3 */
