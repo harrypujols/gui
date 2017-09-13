@@ -63,23 +63,19 @@ var gulp        = require('gulp'),
             .pipe(gulp.dest('./public'));
     });
 
-    gulp.task('data', function () {
-        gulp.src('./src/data/*')
-            .pipe(gulp.dest('./public/data'));
-    });
 
     gulp.task('clean', function() {
-      return clean(['./public/static/**/*', './public/data/*', './public/index.html']);
+      return clean(['./public/static/**/*', './public/index.html']);
     });
 
-    gulp.task('build', ['static', 'html', 'data']);
+    gulp.task('build', ['static', 'html']);
 
     gulp.task('serve', ['build', 'webpack'], function() {
       browsersync.init({
         server: './public'
     });
 
-      gulp.watch(['./src/index.html', './src/static/**/*', './src/data/*'], ['build']);
+      gulp.watch(['./src/index.html', './src/static/**/*'], ['build']);
       gulp.watch(['./src/sass/*.scss', './src/sass/**/*.scss'], ['webpack']);
       gulp.watch(['./src/js/*.js', './src/js/**/*.js'], ['webpack']);
       gulp.watch('./src/index.html').on('change', browsersync.reload);
