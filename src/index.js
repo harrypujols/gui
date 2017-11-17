@@ -10,14 +10,14 @@ import svg from './js/methods/svg'
 new Vue({
   el: '#stage',
 
-  data: data,
+  data,
 
-  components: components,
+  components,
 
   methods: {
-    toggle: toggle,
-    clear: clear,
-    svg: svg
+    toggle,
+    clear,
+    svg
   },
 
   mounted: function() {
