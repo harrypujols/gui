@@ -1,4 +1,4 @@
 // toggle
 export default function( event ) {
-  event.target.classList.remove('is-active')
+  event.target.parentElement.classList.remove('is-active')
 }
