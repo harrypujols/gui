@@ -1,4 +1,6 @@
 // toggle
 export default function( event ) {
-  event.target.parentElement.classList.remove('is-active')
+  document.querySelectorAll('.has-dropdown').forEach(( selector ) => {
+    selector.classList.remove('is-active')
+  })
 }

@@ -26,7 +26,7 @@
       </li>
     </ul>
   </nav>
-  <section id="desktop" class="screen">
+  <section id="desktop" class="screen" @click="clear">
     <window v-if="open" @close="open = false" :post="content"></window>
     <div class="icons">
       <div v-draggable="'.icon'" class="icon-element" @click="open=true; content=data.generic">

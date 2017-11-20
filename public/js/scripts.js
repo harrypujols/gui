@@ -874,9 +874,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (event) {
-  document.querySelectorAll('.has-dropdown').forEach(function (selector) {
-    selector.classList.remove('is-active');
-  });
+  this.clear();
   event.target.classList.add('is-active');
 };
 
@@ -892,7 +890,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (event) {
-  event.target.parentElement.classList.remove('is-active');
+  document.querySelectorAll('.has-dropdown').forEach(function (selector) {
+    selector.classList.remove('is-active');
+  });
 };
 
 /***/ })
