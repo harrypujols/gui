@@ -874,7 +874,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (event) {
-  event.target.classList.toggle('is-active');
+  document.querySelectorAll('.has-dropdown').forEach(function (selector) {
+    selector.classList.remove('is-active');
+  });
+  event.target.classList.add('is-active');
 };
 
 /***/ }),
