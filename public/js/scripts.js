@@ -832,7 +832,7 @@ exports.default = {
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = {"generic":{"message":"window","items":[{"icon":"document","name":"Document"},{"icon":"app","name":"App"},{"icon":"folder","name":"Folder"},{"icon":"document","name":"File"}]},"another":{"message":"another","items":[{"icon":"document","name":"Document"}]}}
+module.exports = {"generic":{"message":"window","items":[{"icon":"document","name":"Document"},{"icon":"app","name":"App"},{"icon":"folder","name":"Folder"},{"icon":"document","name":"File"}]},"another":{"message":"another","items":[{"icon":"document","name":"Document"}]},"trash":{"message":"trash","items":[{"icon":"document","name":"Document"}]}}
 
 /***/ }),
 /* 15 */

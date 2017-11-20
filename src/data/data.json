@@ -22,5 +22,13 @@
       "icon": "document",
       "name": "Document"
     }]
+  },
+
+  "trash": {
+    "message": "trash",
+    "items": [{
+      "icon": "document",
+      "name": "Document"
+    }]
   }
 }
