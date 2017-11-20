@@ -64,8 +64,6 @@
   padding: 5px;
 }
 
-
-
 .close-button {
   display: inline-block;
   width: 20px;
@@ -79,9 +77,8 @@
 .window-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 1rem;
 }
 
 .grid-item {
-
+  padding: 1rem;
 }
