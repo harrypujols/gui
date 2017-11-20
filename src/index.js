@@ -22,7 +22,7 @@ new Vue({
     svg
   },
 
-  mounted: function() {
-
-  }
+  // mounted: function() {
+  //
+  // }
 });
