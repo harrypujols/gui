@@ -1,4 +1,6 @@
 // draggable
+const interact = require('interact.js')
+
 export default Vue.directive('draggable', {
   bind: function(el, binding) {
     interact(el, {
