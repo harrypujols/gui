@@ -9,6 +9,8 @@
 
 .screen {
   height: calc(100vh - 25px);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .center {
