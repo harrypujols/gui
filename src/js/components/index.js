@@ -6,7 +6,7 @@ export default {
     template: '#window',
     props: ['post'],
     methods: {
-      svg: svg
+      svg
     }
   }
 }
