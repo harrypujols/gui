@@ -1,4 +1,5 @@
 // include
+import Vue from 'vue'
 export default Vue.directive('include', {
   bind: function ( el, binding ) {
     fetch( binding.value )

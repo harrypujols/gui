@@ -1,4 +1,5 @@
 // draggable
+import Vue from 'vue'
 const interact = require('interact.js')
 
 export default Vue.directive('draggable', {

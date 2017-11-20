@@ -7,6 +7,8 @@ import toggle from './js/methods/toggle'
 import clear from './js/methods/clear'
 import svg from './js/methods/svg'
 
+import Vue from 'vue'
+
 new Vue({
   el: '#stage',
 

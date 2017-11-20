@@ -4,6 +4,13 @@ module.exports = {
     filename: 'scripts.js'
   },
 
+  // https://vuejs.org/v2/guide/installation.html#Explanation-of-Different-Builds
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    }
+  },
+
   module: {
     rules: [
       {
