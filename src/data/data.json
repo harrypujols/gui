@@ -1,6 +1,6 @@
 {
   "generic": {
-    "message": "Window",
+    "message": "window",
     "items": [{
       "icon": "document",
       "name": "Document"
