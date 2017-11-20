@@ -36,12 +36,27 @@
   );
 }
 
+.inner-window {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "a b c"
+}
+
 .window-title {
-  font-size: rem(26px);
   margin: 0;
-  padding: 0 10px;
+  padding: 10px 15px;
   display: inline-block;
   background-color: $background-color;
+  font-family: $secondary-font;
+  font-size: rem(12px);
+  grid-area: b;
+}
+
+.window-close {
+  grid-area: c;
+  text-align: right;
+  padding: 5px 0;
 }
 
 .window-body {
@@ -49,14 +64,13 @@
   padding: 5px;
 }
 
-.window-close {
-  float: right;
-}
+
 
 .close-button {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
   background-color: $background-color;
   border: 1px solid $fill-color;
 }
