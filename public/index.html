@@ -28,11 +28,11 @@
   <section id="desktop" class="screen">
     <window v-if="open" @close="open = false" :post="content"></window>
     <div class="icons">
-      <div v-draggable="'.icon'" class="icon-element" @click="open = true">
+      <div v-draggable="'.icon'" class="icon-element" @click="open=true; content=data.generic">
         <div class="icon" v-include="svg('disk')"></div>
         <p>disk</p>
       </div>
-      <div v-draggable="'.icon'" class="icon-element" @click="open = true">
+      <div v-draggable="'.icon'" class="icon-element" @click="open=true; content=data.another">
         <div class="icon" v-include="svg('folder')"></div>
         <p>folder</p>
       </div>

@@ -1,16 +1,26 @@
 {
-  "message": "Window",
-  "items": [{
-    "icon": "document",
-    "name": "Document"
-  }, {
-    "icon": "app",
-    "name": "App"
-  }, {
-    "icon": "folder",
-    "name": "Folder"
-  }, {
-    "icon": "document",
-    "name": "File"
-  }]
+  "generic": {
+    "message": "Window",
+    "items": [{
+      "icon": "document",
+      "name": "Document"
+    }, {
+      "icon": "app",
+      "name": "App"
+    }, {
+      "icon": "folder",
+      "name": "Folder"
+    }, {
+      "icon": "document",
+      "name": "File"
+    }]
+  },
+
+  "another": {
+    "message": "another",
+    "items": [{
+      "icon": "document",
+      "name": "Document"
+    }]
+  }
 }

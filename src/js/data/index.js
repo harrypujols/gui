@@ -1,9 +1,10 @@
 // data
-import content from '../../data/data.json'
+import data from '../../data/data.json'
 
 export default {
+  data,
   message: 'hello',
-  content: content,
+  content: {},
   drag: true,
   open: false
 }
