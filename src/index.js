@@ -20,9 +20,5 @@ new Vue({
     toggle,
     clear,
     svg
-  },
-
-  // mounted: function() {
-  //
-  // }
+  }
 });

@@ -11056,10 +11056,6 @@ new _vue2.default({
     clear: _clear2.default,
     svg: _svg2.default
   }
-
-  // mounted: function() {
-  //
-  // }
 });
 
 /***/ }),
